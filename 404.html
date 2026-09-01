@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#014eb9" />
+    <meta
+      name="description"
+      content="Сгущённое молоко и молокосодержащие продукты по ГОСТ и СТО. Каталог, составы, декларации и контакты производителя."
+    />
+    <title>Назаровское молоко — сгущённое молоко от производителя</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="./fonts/NimbusSansNarrow-Regular.otf" as="font" type="font/otf" crossorigin />
+    <link rel="preload" href="./fonts/NimbusSansNarrow-Bold.otf" as="font" type="font/otf" crossorigin />
+    <link rel="preload" href="./art/hero-background-1280.webp" as="image" type="image/webp" />
+    <link rel="preload" href="./art/hero-products-1080.webp" as="image" type="image/webp" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script>
+      (function () {
+        var match = document.cookie.match(/(?:^|;\s*)nazmol_locale=(ru|en|zh)(?:;|$)/);
+        var saved = match && match[1];
+        var browser = (navigator.languages || [navigator.language || ""]).join(",").toLowerCase();
+        var locale = saved || (browser.indexOf("zh") === 0 || browser.indexOf(",zh") >= 0 ? "zh" : browser.indexOf("ru") === 0 || browser.indexOf(",ru") >= 0 ? "ru" : "en");
+        document.documentElement.lang = locale === "zh" ? "zh-CN" : locale;
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/site.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Для работы сайта необходимо включить JavaScript.</noscript>
+  </body>
+</html>
